@@ -30,7 +30,7 @@ const features = [
 
 export const WhyChooseUsSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center justify-center gap-20 py-[100px] px-[100px] relative w-full bg-white">
+    <section className="flex flex-col items-center justify-center gap-20  relative w-full bg-white" style={{padding: "80px 24px"}}>
       <h2 className="text-4xl font-semibold text-[#1d2939] text-center tracking-[-0.72px] leading-[44px] font-['Inter',Helvetica]">
         Discover the top reasons why Tokma is your go-to service partner
       </h2>

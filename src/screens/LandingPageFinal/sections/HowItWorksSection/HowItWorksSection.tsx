@@ -1,4 +1,4 @@
-import { PhoneIcon } from "lucide-react";
+import { PhoneIcon, Smartphone } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
@@ -25,7 +25,7 @@ const steps = [
 
 export const HowItWorksSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center justify-center gap-20 py-[100px] px-[100px] relative self-stretch w-full bg-white">
+    <section style={{  padding: '100px 24px' }} className="flex flex-col items-center justify-center  py-20 px-20 gap-20 self-stretch w-full bg-white" >
       <header className="flex flex-col max-w-[760px] items-start gap-[19px] relative w-full">
         <h2 className="relative self-stretch mt-[-1.00px] font-semibold text-[#1d2939] text-4xl text-center tracking-[-0.72px] leading-[44px]">
           How Tokma Works
@@ -79,7 +79,7 @@ export const HowItWorksSection = (): JSX.Element => {
             <span className="font-medium text-[15.4px] leading-6">
               Download Now
             </span>
-            <PhoneIcon className="w-5 h-5" />
+            <Smartphone className="w-5 h-5" />
           </Button>
         </div>
       </div>

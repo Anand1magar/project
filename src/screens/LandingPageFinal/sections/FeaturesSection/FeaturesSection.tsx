@@ -75,8 +75,8 @@ const bottomFeatures = [
 
 export const FeaturesSection = (): JSX.Element => {
   return (
-    <section className="flex items-start justify-center px-[24px] py-[129px] w-full bg-white" >
-      <div className="flex flex-col max-w-[1120px] items-center gap-[57px] w-full">
+    <section className="flex items-start justify-center px-[24px] py-[129px] min-w-[100px]  bg-white " >
+      <div className="flex flex-col max-w-[1120px] items-center gap-[57px] w-full ">
         {/* Section Header */}
         <header className="flex flex-col max-w-[760px] items-start gap-[19px] w-full">
           <h2 className="font-semibold text-[#1d2939] text-4xl text-center tracking-[-0.72px] leading-[44px] w-full">
@@ -95,9 +95,10 @@ export const FeaturesSection = (): JSX.Element => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="flex flex-col min-w-[350px] items-center gap-[60px] pt-20 pb-0 px-0 flex-1 bg-gray-100 rounded-3xl overflow-hidden"
+                // section stated
+                className="flex flex-col min-w-[200px] items-center gap-[60px] pt-20 sm:pt-0 pb-0 px-0 flex-1 bg-gray-100 rounded-3xl overflow-hidden"
               >
-                <CardContent className="flex flex-col items-start justify-center gap-[15.39px] px-[60px] py-0 w-full">
+                <CardContent className="flex flex-col items-start justify-center gap-[15.39px] px-[60px] sm:px-[24px] py-0 w-full">
                   <div className="flex flex-col items-start w-full">
                     <h3 className="font-semibold text-[#1d2939] text-3xl leading-[42px]">
                       {feature.title}
@@ -113,7 +114,7 @@ export const FeaturesSection = (): JSX.Element => {
           </div>
 
           {/* Middle Row - Single Card */}
-          <Card className="flex flex-wrap items-end gap-[60px] px-[60px] py-0 w-full bg-gray-100 rounded-3xl">
+          <Card className="flex flex-wrap items-end gap-[10px] px-[25px] py-0 w-full bg-gray-100 rounded-3xl">
             <CardContent className="flex flex-col min-w-[220px] h-[464px] items-center justify-center gap-[15.59px] flex-1">
               <div className="flex flex-col items-start w-full">
                 <h3 className="font-semibold text-[#1d2939] text-3xl leading-[42px]">
@@ -125,7 +126,7 @@ export const FeaturesSection = (): JSX.Element => {
                 <br />
                 Hire trusted local guides who speak your language and understand
                 your needs.
-              </p>
+              </p> 
             </CardContent>
             <img
               className="relative w-[449px] h-[415px]"
@@ -139,7 +140,7 @@ export const FeaturesSection = (): JSX.Element => {
             {bottomFeatures.map((feature, index) => (
               <Card
                 key={index}
-                className="flex flex-col min-w-[380px] h-[523px] items-center justify-between pt-20 pb-0 px-0 flex-1 bg-gray-100 rounded-3xl overflow-hidden"
+                className="flex flex-col min-w-[200px] h-[523px] items-center justify-between pt-20 pb-0 px-0 flex-1 bg-gray-100 rounded-3xl overflow-hidden"
               >
                 <CardContent className="flex flex-col items-start justify-center gap-[15.39px] px-[60px] py-0 w-full">
                   <div className="flex flex-col items-start w-full">

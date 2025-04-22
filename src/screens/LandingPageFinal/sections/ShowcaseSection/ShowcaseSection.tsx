@@ -38,7 +38,7 @@ export const ShowcaseSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center gap-20 py-[100px] px-[120px] relative self-stretch w-full bg-white">
+    <section className="flex flex-col items-center justify-center gap-20 py-[100px] px-[24px] relative self-stretch w-full bg-white">
       <div className="flex flex-col max-w-[1200px] items-center gap-[70px] relative w-full">
         <header className="flex flex-col items-center gap-2.5 relative self-stretch w-full">
           <h2 className="relative self-stretch mt-[-1.00px] font-inter font-semibold text-[#1d2939] text-4xl text-center tracking-[-0.72px] leading-[44px]">

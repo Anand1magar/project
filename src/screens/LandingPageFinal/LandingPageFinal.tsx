@@ -7,11 +7,13 @@ import { HowItWorksSection } from "./sections/HowItWorksSection";
 import { ShowcaseSection } from "./sections/ShowcaseSection/ShowcaseSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 import { WhyChooseUsSection } from "./sections/WhyChooseUsSection";
+// import { HeroSection2 } from "./sections/HeroSection2";
 
 export const LandingPageFinal = (): JSX.Element => {
   return (
     <main className="flex flex-col w-full overflow-x-hidden">
       <HeroSection />
+      {/* <HeroSection2/> */}
       <FeaturesSection />
       <WhyChooseUsSection />
       <HowItWorksSection />
@@ -20,5 +22,5 @@ export const LandingPageFinal = (): JSX.Element => {
       <DownloadAppSection />
       <FooterSection />
     </main>
-  );
+  );``
 };
